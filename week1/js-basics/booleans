@@ -1,0 +1,5 @@
+//JS Booleans
+//Booleans are true and false
+
+var myTruth = true;
+var myFalse = false;
