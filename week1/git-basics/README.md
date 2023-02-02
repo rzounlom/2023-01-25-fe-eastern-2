@@ -22,3 +22,5 @@ Week 1 git Basics
       git pull <branchName> - pulls down the latest changes in a remote branch on github
       git push origin <branchName> - pushes changes to a remote branch on github
       git fetch origin <branchName> - fetches a remote branch you don't have locally
+   3. Cloning remote repos from GitHub:
+      git clone <repoUrl> - clone repo from GitHub
