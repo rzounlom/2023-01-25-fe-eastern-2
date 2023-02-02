@@ -3,21 +3,22 @@
 // ++ --> increase a value by 1
 var plusPlus = 5;
 plusPlus++;
-// console.log("plusPlus: ", plusPlus);
+console.log("plusPlus: ", plusPlus);
 
 // -- --> decrease a value by 1
 var minusMunus = 10;
 minusMunus--;
-// console.log("minusMunus:", minusMunus);
+console.log("minusMunus:", minusMunus);
 
 //**What about ** and // ? */
 
 // **
 var timesTimes = 90;
-timesTimes;
+console.log(timesTimes * 2);
 
 // //
 var divideDivide = 45;
+var semi;
 
 //**Operation followed by the "=" operator */
 // +=
@@ -53,8 +54,8 @@ var combination = 2 * 2 + 2 / 5;
 // console.log("combination: ", combination);
 
 //**Operations and strings... be careful!*/
-var addString = 5 + "1";
-// console.log("addString:", addString);
+var addString = "1" + 5;
+console.log("addString:", addString);
 // console.log("typeof addString:", typeof addString);
 
 var minusString = "5" - "1";

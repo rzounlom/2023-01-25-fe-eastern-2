@@ -14,7 +14,7 @@ Declaring Varibles:
 
 Operations:
 
-- - addition
+- "+" addition
 - - subtraction
 - / division
 - - multiplication

@@ -8,7 +8,8 @@
  */
 
 //Declare a JS string
-var firstName = "John";
+var firstName;
+firstName = "Jane";
 
 var middleName = "A.";
 
@@ -23,4 +24,9 @@ console.log("fullName2: ", fullName2);
 
 //with string interpoliation: backticks
 var fullName3 = `${firstName} ${middleName} ${lastName}`;
+
 console.log("fullName3: ", fullName3);
+
+//add strings with concat
+var newName = firstName.concat(" " + lastName);
+// console.log("newName: ", newName);
