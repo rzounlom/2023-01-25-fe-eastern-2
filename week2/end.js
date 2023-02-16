@@ -129,42 +129,74 @@ let num4 = 100;
 // }
 
 //Exercise: use a for loop to print numbers from 1 to 10
-// for (let counter = 1; counter <= 10; counter++) {
-//   console.log(counter);
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i);
 // }
 
-//Exercise: use a for loop to print numbers from 1 to 10 that are divisible by 2. HINT use the modulus
-// for (let counter = 1; counter <= 10; counter++) {
-//   if (counter % 2 === 0) {
-//     console.log(counter);
+//Exercise: use a for loop to print numbers from 1 to 10 that are divisible by 2. HINT use the modulus 9 % 3 --> 0
+// for (let i = 1; i <= 10; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
 //   }
 // }
 
 //Exercise: use a for loop to print numbers from 1 to 10 that are divisible by 3. HINT use the modulus
-// for (let counter = 1; counter <= 10; counter++) {
-//   if (counter % 3 === 0) {
-//     console.log(counter);
+
+// for (let i = 1; i <= 10; i++) {
+//   if (i % 3 === 0) {
+//     console.log(i);
 //   }
 // }
 
-//Exercise: FizzBuzz: from numbers 1 to 10, if the number is divisible by 3 print Fizz, if the number is divisible by 5 print Buzz, if the number is divisible by 5 and 3,print FizzBuzz, else print the number
-for (let i = 1; i <= 30; i++) {
-  //check if number is divisible by both 3 and 5
-  if (i % 5 === 0 && i % 3 === 0) {
-    console.log("FizzBuzz");
-  } else if (i % 5 === 0) {
-    console.log("Buzz");
-  } else if (i % 3 === 0) {
-    console.log("Fizz");
-  } else {
-    console.log(i);
-  }
-}
+/*Exercise: FizzBuzz: from numbers 1 to 30, if the number is divisible by 3 print the string 'Fizz', 
+if the number is divisible by 5 print 'Buzz', if the number is divisible by 5 and 3,print 'FizzBuzz', else print the number i*/
+// for (let i = 1; i <= 30; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log(`FizzBuzz`);
+//   } else if (i % 5 === 0) {
+//     console.log("Buzz");
+//   } else if (i % 3 === 0) {
+//     console.log("Fizz");
+//   } else {
+//     console.log(i);
+//   }
+// }
 
 //while loop:
+//for loop comparison: most common
+// for (let counter = 0; counter < 4; counter++) {
+//   console.log(counter);
+// }
+
+//print number from 1 - 10 using a while loop
+// let whileCounter = 11;
+// while (whileCounter <= 10) {
+//   console.log(whileCounter);
+//   whileCounter++;
+// }
+
 // A while loop that prints 1, 2, and 3
 let counterTwo = 5;
 
 //do while loop: note the do while will always run at least once
 let countString = "";
 let i = 1;
+
+let doWhileCounter = 2;
+
+// do {
+//   console.log(doWhileCounter);
+// } while (doWhileCounter <= 1);
+// {
+//   doWhileCounter++;
+// }
+
+let myStr = "hello";
+// console.log(myStr[myStr.length - 1]);
+// for (let i = 0; i < myStr.length; i++) {
+//   console.log(myStr[i]);
+// }
+
+for (let char of myStr) {
+  console.log(char);
+}
