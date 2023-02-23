@@ -51,21 +51,21 @@ var combination = 2 * 2 + 2 / 5;
 
 //what would be the outcome of the above operation?
 
-// console.log("combination: ", combination);
+console.log("combination: ", combination);
 
 //**Operations and strings... be careful!*/
 var addString = "1" + 5;
 console.log("addString:", addString);
-// console.log("typeof addString:", typeof addString);
+console.log("typeof addString:", typeof addString);
 
 var minusString = "5" - "1";
-// console.log("minusString:", minusString);
-// console.log("typeof minusString:", typeof minusString);
+console.log("minusString:", minusString);
+console.log("typeof minusString:", typeof minusString);
 
 var timesString = "5" * "7";
-// console.log("timesString:", timesString);
-// console.log("typeof timesString:", typeof timesString);
+console.log("timesString:", timesString);
+console.log("typeof timesString:", typeof timesString);
 
 var divideString = "16" / "2";
-// console.log("divideString:", divideString);
-// console.log("typeof divideString:", typeof divideString);
+console.log("divideString:", divideString);
+console.log("typeof divideString:", typeof divideString);
