@@ -26,10 +26,14 @@ function greeting(firstName = "John", lastName = "Doe", callback) {
 const myNums = [5, 4, 3, 2, 1];
 const myNums2 = [510, 1, 1, 2, 1];
 
+//step 1: create a function that takes in two parameters, a and b, and returns the sum of a plus b
 const addNumbers = (a, b) => a + b;
+
+//step 2: create a function that takes in two parameters, a and b, and returns the sum of a minus b
 const subtractNumbers = (a, b) => a - b;
 
-const sumNumber = (arr = [], func) => {
+//create a function that takes in an array, arr (default arr to an empty array),  and a callback function, func, and uses the callback function on each value in the array, and returns the total value
+const calculateNums = (arr = [], func) => {
   //create variable to hold my sum
   let sum = 0;
 
@@ -40,5 +44,5 @@ const sumNumber = (arr = [], func) => {
   return sum;
 };
 
-console.log(sumNumber(myNums, addNumbers));
-console.log(sumNumber(myNums2, subtractNumbers));
+console.log(calculateNums(myNums, addNumbers));
+console.log(calculateNums(myNums2, subtractNumbers));

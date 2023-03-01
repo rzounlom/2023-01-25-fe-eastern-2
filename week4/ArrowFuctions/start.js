@@ -1,18 +1,18 @@
 //**Arrow Functions */
 
-//basic regular function
+//basic function
 function calculateArea(l = 0, h = 0, w = 0) {
   return `The area is ${l * w * h}`;
 }
 
 // console.log(calculateArea(5, 7, 5));
 
-//basic arrow function
+//basic arrow function with implcit return
 const calculateAreaArrow = (l = 0, h = 0, w = 0) => `The area is ${l * w * h}`;
 
 // console.log(calculateAreaArrow(5, 7, 10));
 
-//basic arrow function with curly braces
+//basic arrow function with curly braces(non-implicit returns)
 const calculateAreaArrow2 = (l = 0, h = 0, w = 0) => {
   let message = `The area is ${l * w * h}`;
   return message;
@@ -32,10 +32,12 @@ function a() {
   let aVar = `hello from the a Scope!`; //aVar is available inside this function and to the scopes below it
   return function b() {
     let bVar = `hello from the b Scope!`; //bVar is available inside this function and to the scopes below it
+    // console.log("aVar in b scope: ", aVar);
     return function c() {
       let cVar = `hello from the c Scope!`; //cVar is available inside this function and to the scopes below it
-      // console.log("cVar: ", cVar);
-      // console.log(findMe);
+      // console.log("cVar from c scope: ", cVar);
+      // console.log("bVar from c scope: ", bVar);
+      // console.log("foundMe from the c scope", findMe);
       return "Hello from function c";
     };
   };
@@ -45,7 +47,7 @@ function a() {
 // console.log(a());
 
 const myNestedFunctions = () => () => () => () => "You Finally found ME!!!!!";
-// console.log(myNestedFunctions());
+console.log(myNestedFunctions());
 
 //**EXERCISE: Turn the above regular function example into an arrow function */
 
