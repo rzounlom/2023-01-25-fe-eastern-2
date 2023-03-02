@@ -12,6 +12,15 @@ const myPromise = () => {
 
 // myPromise();
 
+const myPromise2 = () => {
+  const data = axios
+    .get("https://jsonplaceholder.typicode.com/todos")
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err));
+};
+
+myPromise2();
+
 //async await
 const myAsyncFunction = async () => {
   try {
@@ -24,4 +33,16 @@ const myAsyncFunction = async () => {
   }
 };
 
-// console.log(myAsyncFunction());
+//async await regular function declaration
+async function myAsyncFunction2() {
+  try {
+    const response = await axios.get(
+      "https://jsonplaceholder.typicode.com/todos"
+    );
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+console.log(myAsyncFunction());

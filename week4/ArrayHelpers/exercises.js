@@ -5,15 +5,29 @@ const { employees, myDog } = require("../data");
 
 /*1. Array.find() exercise
 using the employees data, find the employee with the name "James" */
+const employeeJames = employees.find((employee) => employee.name === "James");
+console.log("employeeJames: ", employeeJames);
 
 /*1b. Array.find() exercise
 using the employees data and myDog object, find the employee who owns the dog */
+const myDogOwner = employees.find((employee) => employee.name === myDog.owner);
+console.log("myDogOwner: ", myDogOwner);
 
 /*2. Array.filter() exercise
-using the employees data, return an array of all employees with "Software Engineer" in their title title  */
+using the employees data, return an array of all employees with "Software Engineer" in their title  */
+const softwareEngineers = employees.filter((employee) =>
+  employee.title.includes("Software Engineer")
+);
+
+console.log("softwareEngineers: ", softwareEngineers);
 
 /*2b. Array.filter() exercise
-using the employees data, return an array of all employees that do not have "Software Engineer" in their title title  */
+using the employees data, return an array of all employees that do not have "Software Engineer" in their title  */
+const notSoftwareEngineers = employees.filter(
+  (employee) => !employee.title.includes("Software Engineer")
+);
+
+console.log("notSoftwareEngineers: ", notSoftwareEngineers);
 
 /*3. Array.forEach() exercise
 using the employees data, log the string "Employee: <employe name> is a: <employee title>" using template literals*/

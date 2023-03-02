@@ -3,8 +3,8 @@
 /*callback: A callback function is a function passed into another function as an argument,
  which is then invoked inside the outer function to complete some kind of routine or action.*/
 
-function printGreeting() {
-  return console.log(`Hi, my name is Jim Nice to meet you!`);
+function printGreeting(name) {
+  return console.log(`Hi, my name is ${name}, Nice to meet you!`);
 }
 
 function greeting(firstName = "John", lastName = "Doe", callback) {
@@ -16,8 +16,8 @@ function greeting(firstName = "John", lastName = "Doe", callback) {
     return console.log(fullName);
   }
 
-  return console.log(callback());
+  return console.log(callback(fullName));
 }
 
-// greeting("Jane", "Doe", printGreeting);
-// greeting("Randy", "Watson", printGreeting);
+greeting("Jane", "Doe", printGreeting);
+greeting("Randy", "Watson", printGreeting);
