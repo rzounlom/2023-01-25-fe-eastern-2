@@ -2,6 +2,7 @@ Week 6 Lesson outline
 
 Chrome Dev tools
 -Inspecting a webpage
+--Viewing site on different device sizes
 --Elements tab - Modifying webpage html/css via dev tools
 --Console tab - Modifying JavaScript via dev tools
 --Record tab - Record activity on website
