@@ -77,5 +77,6 @@ const isPalindrome2 = (str) => {
   return reverse(str) === str;
 };
 
-console.log(reverse("yes"));
+console.log(returnVowels("yes"));
+
 module.exports = { reverse, returnVowels, isPalindrome };
