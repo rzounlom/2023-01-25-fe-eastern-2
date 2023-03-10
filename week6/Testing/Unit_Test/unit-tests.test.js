@@ -1,53 +1,51 @@
-const {reverse, returnVowels, isPalindrome} = require('./end')
-
-
+const { reverse, returnVowels, isPalindrome } = require("./end");
 
 //example test function
-function testFunction(str){
-  if(!str){
-    throw new Error('Please provide a string')
+function testFunction(str) {
+  if (!str) {
+    throw new Error("Please provide a string");
   }
-  return str
-  }
+  return str;
+}
 
-describe('testFunction', () => {
+describe("testFunction", () => {
+  test("should return a string", () => {
+    const myStr = testFunction("John");
+    expect(myStr).toBeTruthy();
+    expect(myStr).toEqual("John");
+  });
 
-  test('should return a string', () => {
-    const myStr = testFunction('John')
-    expect(myStr).toBeTruthy()
-    expect(myStr).toEqual('John')
-  })
-
-  test('should return an error when no string is provided', () => {
-      //testing errors
-  expect(() => testFunction()).toThrow(Error)
-  })
-})
+  test("should return an error when no string is provided", () => {
+    //testing errors
+    expect(() => testFunction()).toThrow(Error);
+  });
+});
 
 //create test for reverse function
-describe('reverse', () => {
+describe("reverse function", () => {
+  it("should return a string in reverse", () => {
+    let word = "hello";
+    const reversedStr = reverse(word);
 
-  it('returns a reversed string', () => {
+    expect(reversedStr).toEqual("olleh");
+  });
+});
 
-  const myRevesrsedStr = reverse('hello')
+//testing returnVowels
+describe("returnVowels", () => {
+  let str = "Jest is pretty dope";
 
-  expect(myRevesrsedStr).toEqual('olleh')
-  })
-})
+  const vowels = returnVowels(str);
 
-describe('returnVowels', () => {
+  it("should return the correct number of vowels in the provided string", () => {
+    const vowels = returnVowels(str);
+    expect(vowels).toBeTruthy();
+    expect(vowels).toEqual(5);
+  });
 
-  it('does the string have vowels',  () => {
+  it("should return error string if no string is provided in the function", () => {
+    const vowels = returnVowels();
 
-const hasVowels = returnVowels('hello')
-
-expect(hasVowels).toBeGreaterThan(0)
-  })
-
-  it('returns correct number of vowels', () => {
-    const hasVowels = returnVowels('hello')
-
-    expect(hasVowels).toEqual(2)
-  })
-})
-
+    expect(vowels).toEqual("Please pass in a str");
+  });
+});

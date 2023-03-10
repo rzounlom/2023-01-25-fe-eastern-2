@@ -6,6 +6,15 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
+const reverse = (str) => {
+  if (!str) {
+    return "Please pass in a str";
+  }
+
+  const myArr = str.split("").reverse().join("");
+  return myArr;
+};
+
 // --- Q2 Count vowels
 // Write a function that returns the number of vowels
 // used in a string.  Vowels are the characters 'a', 'e'
@@ -23,3 +32,5 @@
 // --- Examples:
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
+
+module.exports = { reverse };

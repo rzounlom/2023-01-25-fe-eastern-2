@@ -38,6 +38,10 @@ const reverseNoSplit = function (str) {
 //   vowels('Why?') --> 0
 
 const returnVowels = (str) => {
+  if (!str) {
+    return "Please pass in a str";
+  }
+
   //create array of vowels
   const vowels = ["a", "e", "i", "o", "u"];
 
