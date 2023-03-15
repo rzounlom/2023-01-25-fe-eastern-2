@@ -143,3 +143,54 @@ footer {
   width: 100%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
+
+/* portfolio */
+
+.projects {
+  height: 90%;
+  width: 70%;
+  display: flex;
+  background-color: rgb(51, 179, 170);
+  padding: 10px;
+}
+
+.card-container {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 400px;
+  width: 428px;
+  border-radius: 12px;
+  background-color: white;
+  margin-left: 5px;
+  margin-top: 50px;
+}
+
+.project-card > .project-img {
+  height: 85%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.project-card > .project-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-card > .project-details {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
