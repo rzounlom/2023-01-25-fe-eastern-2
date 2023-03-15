@@ -17,8 +17,10 @@ Week 7 Lesson outline
 
   <!-- Tags that group and organize elements together and semantic html -->
 
-- <header>
-- <section>
+- <header> - denotes the header section of the website; will usually contain a nav if there is one
+- <nav> - denotes some sort of navigation section
+- <main> - denotes the main section of the website
+- <section> - denotes a section within a header or main
 - <div> -  block element with spans the length of its container unless by default
 - <span> - a inline element, meaning it takes up as much space as the content inside of it and multiple can fit on the same line
 - <footer>

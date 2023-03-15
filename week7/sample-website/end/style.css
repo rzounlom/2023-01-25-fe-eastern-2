@@ -1,0 +1,145 @@
+/* Reset default css styling for the page */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default styles for anchor tags */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: 14px;
+}
+
+/* container */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+header {
+  height: 10vh;
+  width: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+header > nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > nav > .logo,
+header > nav > ul {
+  letter-spacing: 2px;
+}
+
+header > nav > ul {
+  list-style: none;
+}
+
+header > nav > .logo {
+  position: absolute;
+  left: 40px;
+  font-size: 30px;
+}
+
+header > nav > ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  width: 50%;
+  /* font-size: 15px; */
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+header > nav > ul > li {
+  min-width: 115px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+header > nav > ul > li:hover {
+  background-color: rgb(51, 179, 170);
+  color: white;
+}
+
+header > nav > ul > li.active {
+  background-color: rgb(51, 179, 170);
+}
+
+/* main */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  width: 100%;
+}
+
+.about {
+  height: 90%;
+  width: 70%;
+  display: flex;
+  background-color: rgb(51, 179, 170);
+}
+
+.about section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.about section.details {
+  padding: 0 8%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.about section.details > .heading {
+  font-size: 5rem;
+}
+
+.about section.details > .title {
+  font-size: 1.8rem;
+}
+
+.about section.details > .text {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.about section.profile-img img {
+  border-radius: 50%;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
