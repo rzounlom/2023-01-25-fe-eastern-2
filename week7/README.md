@@ -15,17 +15,20 @@ Week 7 Lesson outline
 - <title> - the title of the HTML page which is shown in the tab in the browser
 - <body> - a container for all other elements other elements such as paragraphs, headings, anchor tags, lists, tables, etc.
 
+  <!-- Tags that group and organize elements together and semantic html -->
+
+- <header>
+- <section>
+- <div> -  block element with spans the length of its container unless by default
+- <span> - a inline element, meaning it takes up as much space as the content inside of it and multiple can fit on the same line
+- <footer>
+
 ### HTML comments
 
 - vsCode shortcut: Window + / (forward slash)
 <!-- this is how to comment html -->
 
 ### Commonly used tags
-
-<!-- Tags that group and organize elements to gether -->
-
-- <div> -  block element with spans the length of its container unless by default
-- <span> - a inline element, meaning it takes up as much space as the content inside of it and multiple can fit on the same line
 
 <!-- Tags for displaying text -->
 
@@ -66,3 +69,13 @@ Week 7 Lesson outline
 - <form> -  the outermost element for creating a form. All other form elements will go inside of this tag
 - <input> - used to take in user input. taks in prams: type (the type of input: text, password, button, radio etc.), name (the name of the input; used in the request to give names to the input values), placeholder (the default text within an input; usually used to show users an example of what to type), required (users cannot submit the form unless some text has been added to the input)
 - <button> - creates a button. Can be used inside or outside of a form
+
+Cool resources for futher reading:
+
+<!-- HTML -->
+
+- w3Schools: https://www.w3schools.com/html/default.asp
+
+<!-- Hands-on learning -->
+
+- freeCodeCamp html section: https://www.freecodecamp.org/learn/2022/responsive-web-design/
