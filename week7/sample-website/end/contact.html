@@ -23,21 +23,43 @@
       </header>
 
       <main>
-        <div class="about">
-          <section class="details">
-            <h1 class="heading">John Doe</h1>
-            <h3 class="title">Software Engineer at Google</h3>
-            <p class="text">
-              I'm a designer and developer based in LA. <br />
-              Passionat about connecting with people and creating<br />
-              meaningful experiences that solve problems
-            </p>
-          </section>
-          <section class="profile-img">
-            <img
-              width="400px"
-              src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-            />
+        <div class="contact">
+          <section class="form-container">
+            <form class="d-flex-c-c-c" action="#" method="post">
+              <div class="input-group name d-flex-c jc-c">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name..."
+                  required
+                />
+              </div>
+              <div class="input-group email d-flex-c jc-c">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Your email..."
+                  required
+                />
+              </div>
+              <div class="input-group message d-flex-c jc-c">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  type="text"
+                  placeholder="Your message..."
+                  required
+                ></textarea>
+              </div>
+              <div class="btn-group d-flex-r ai-fe">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
           </section>
         </div>
       </main>
