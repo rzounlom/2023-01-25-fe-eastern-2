@@ -39,6 +39,7 @@ Week 7 Lesson outline
 - <b> - adds bold to text in between the tag
 - <i> - itliacs to text in between the tag
 - <sup> - makes text appear half a character above the normal line
+- <u> - underline text
 - <br> - creates a line break, or return within text or after any element
 
 <!-- Tags for naviation within a website or to another website -->
@@ -69,7 +70,7 @@ Week 7 Lesson outline
 <!-- Tags for creating forms -->
 
 - <form> -  the outermost element for creating a form. All other form elements will go inside of this tag
-- <input> - used to take in user input. taks in prams: type (the type of input: text, password, button, radio etc.), name (the name of the input; used in the request to give names to the input values), placeholder (the default text within an input; usually used to show users an example of what to type), required (users cannot submit the form unless some text has been added to the input)
+- <input> - used to take in user input. takes in prams: type (the type of input: text, password, button, radio etc.), name (the name of the input; used in the request to give names to the input values), placeholder (the default text within an input; usually used to show users an example of what to type), required (users cannot submit the form unless some text has been added to the input)
 - <button> - creates a button. Can be used inside or outside of a form
 
 Cool resources for futher reading:
@@ -81,3 +82,7 @@ Cool resources for futher reading:
 <!-- Hands-on learning -->
 
 - freeCodeCamp html section: https://www.freecodecamp.org/learn/2022/responsive-web-design/
+
+<!-- Responsive Design -->
+
+- interneting is hard: https://www.internetingishard.com/
