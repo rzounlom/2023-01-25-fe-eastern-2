@@ -248,10 +248,31 @@ main {
 
 .projects {
   height: 90%;
-  width: 70%;
+  width: 90%;
   display: flex;
   background-color: rgb(51, 179, 170);
   padding: 10px;
+}
+
+/* modify projects sectionscrollbar */
+/* scrollbar width */
+.projects ::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* scrollbar track */
+.projects ::-webkit-scrollbar-track {
+  background: darkgray;
+}
+
+/* scrollbar handle */
+.projects ::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* scrollbar handle on hover */
+.projects ::-webkit-scrollbar-thumb:hover {
+  background: lightgray;
 }
 
 .card-container {
@@ -259,6 +280,7 @@ main {
   width: 100%;
   overflow-y: auto;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -266,16 +288,16 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   height: 400px;
-  width: 428px;
+  width: 100%;
   border-radius: 12px;
   background-color: white;
-  margin-left: 5px;
-  margin-top: 50px;
+  margin-top: 15px;
 }
 
 .project-card > .project-img {
   height: 85%;
-  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
 }
 
 .project-card > .project-img img {
@@ -286,13 +308,53 @@ main {
 .project-card > .project-details {
   height: 15%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-size: 1.2rem;
 }
 
+.project-card > .project-details > button {
+  height: 70%;
+  width: 40%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid rgb(51, 179, 170);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card > .project-details > button:hover {
+  background-color: rgb(51, 179, 170);
+  color: white;
+}
+
 .project-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* projects media queries */
+
+/* small desktop and greater */
+@media (min-width: 900px) {
+  .project-card {
+    height: 400px;
+    width: 49%;
+    border-radius: 12px;
+    background-color: white;
+    margin-top: 15px;
+  }
+}
+
+/* medium desktop and greater */
+@media (min-width: 1200px) {
+  .project-card {
+    height: 400px;
+    width: 32%;
+    border-radius: 12px;
+    background-color: white;
+    margin-top: 15px;
+  }
 }
 
 /* Contact */
