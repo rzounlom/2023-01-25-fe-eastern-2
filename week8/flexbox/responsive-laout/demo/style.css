@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: pink;
+}
+
+header {
+  background-color: red;
+  border: 2px solid white;
+}
+
+main {
+  background-color: blue;
+  border: 2px solid white;
+}
+
+footer {
+  background-color: green;
+  border: 2px solid white;
+}
