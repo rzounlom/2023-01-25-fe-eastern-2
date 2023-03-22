@@ -34,6 +34,7 @@ NOTE: Although it's nice to know/memorize many different properties, it's better
 ### CSS Grid: A system to create website layouts that look good on all screens
 
 - Reference: https://www.w3schools.com/css/css_grid.asp
+- Will cover in week 9
 
 ### Media Queries: allow you to specify the styles of elements based on the screen size
 
