@@ -4,6 +4,7 @@
 
 ## CSS Basics
 
+- selecting elements: we can select elements by id, class name, element name (button, div, input, etc.) and more
 - inline css
 - relative reference style sheet (within the repo)
 - external style sheet via CDN (Example Bootstrap)
