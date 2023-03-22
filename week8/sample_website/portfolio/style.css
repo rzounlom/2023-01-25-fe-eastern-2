@@ -313,9 +313,14 @@ main {
   font-size: 1.2rem;
 }
 
-.project-card .project-details button {
+.project-card .project-details a {
   height: 70%;
   width: 40%;
+}
+
+.project-card .project-details a button {
+  height: 100%;
+  width: 100%;
   cursor: pointer;
   font-size: 1.1rem;
   border-radius: 8px;
