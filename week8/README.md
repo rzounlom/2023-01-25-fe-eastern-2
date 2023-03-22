@@ -67,3 +67,7 @@ Deployment(make website visible to the world wide web):
 - deploy static website on github pages: https://blog.flycode.com/how-to-deploy-a-static-website-for-free-using-github-pages
 
 - deploy static website on Netlify: https://www.netlify.com/blog/2016/10/27/a-step-by-step-guide-deploying-a-static-site-or-single-page-app/
+
+Cool App for Responsive Design
+
+- Responsively App: allows you to view your app on multiple devices at the same time. Here is the link to download it --> https://responsively.app/
