@@ -9,12 +9,20 @@
   width: 100vw;
   overflow-y: auto;
   background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cards-container {
   height: 500px;
   width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   border: 1px solid black;
+  flex-direction: column;
+  overflow-y: auto;
 }
 
 .card {

@@ -13,14 +13,27 @@
 header {
   background-color: red;
   border: 2px solid white;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 main {
   background-color: blue;
   border: 2px solid white;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
   background-color: green;
   border: 2px solid white;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
