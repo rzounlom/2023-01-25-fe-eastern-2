@@ -15,11 +15,7 @@ header .heading {
 }
 
 .home header {
-  height: 95vh;
-}
-
-.home header .heading {
-  height: 70vh;
+  height: 75vh;
 }
 
 /* Header Media queries */
