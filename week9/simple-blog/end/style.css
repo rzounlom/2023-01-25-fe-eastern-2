@@ -1,7 +1,7 @@
 /* Header */
 header {
   height: 45vh;
-  background-image: url();
+  background-image: url(https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
 }
 
 header .navbar {
@@ -9,15 +9,42 @@ header .navbar {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+header .heading {
+  height: 35vh;
+  color: lightgray;
+}
+
+.home header {
+  height: 95vh;
+}
+
+.home header .heading {
+  height: 70vh;
+}
+
 /* Header Media queries */
 @media (min-width: 768px) {
 }
 
 /* Main */
-main {
+.home main {
   height: 50vh;
   /* border: 1px solid lightgray; */
   background-color: green;
+}
+
+.stories main {
+  min-height: 85vh;
+  /* border: 1px solid lightgray; */
+}
+
+.stories main .row {
+  width: 100%;
+}
+
+.stories main .row .card img {
+  width: 100%;
+  height: 60%;
 }
 
 /* Main media queries */
@@ -26,5 +53,4 @@ main {
 footer {
   height: 5vh;
   /* border: 1px solid lightgray; */
-  background-color: pink;
 }
