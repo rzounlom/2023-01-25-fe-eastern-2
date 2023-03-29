@@ -1,0 +1,17 @@
+header {
+  height: 10vh;
+  border: 1px solid lightgray;
+  background-color: red;
+}
+
+main {
+  height: 85vh;
+  border: 1px solid lightgray;
+  background-color: green;
+}
+
+footer {
+  height: 5vh;
+  border: 1px solid lightgray;
+  background-color: pink;
+}
