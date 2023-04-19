@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Users Crud</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center bg-primary text-white">
+        <h1>Users</h1>
+        <p>Add and Delete users</p>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-sm-6 col-6 p-2">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Name"
+            id="txtName"
+            required
+          />
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 p-2">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter City"
+            id="txtCity"
+            required
+          />
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 p-2">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Mobile"
+            id="txtMobile"
+            required
+          />
+        </div>
+        <div class="col-md-2 col-sm-6 col-12 p-2">
+          <input
+            type="button"
+            id="btnAdd"
+            class="btn btn-primary para"
+            value="Add New"
+          />
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-md-12 col-sm-12 col-12 p-2">
+          <table
+            id="tblData"
+            class="table table-bordered table-hover table-striped"
+          >
+            <thead>
+              <tr>
+                <th>Sr No</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Mobile</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
