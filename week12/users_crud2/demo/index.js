@@ -5,17 +5,23 @@ let emptyRow =
 //make sure all code hasloaded before making any DOM changes
 $(document).ready(function () {
   $("#tblData tbody").append(emptyRow); // add the empty row once the page loads
+
   $("#btnAdd").click(function () {
     //get value of each form input
     let name = $("#txtName").val().trim();
     let city = $("#txtCity").val().trim();
     let mobile = $("#txtMobile").val().trim();
 
-    //validate form inputs
     // console.log({ name, city, mobile });
 
     const mobileValidation =
       new RegExp(/^[\d]*$/gi).test(mobile) && mobile.length === 10; //make sure only numbers are in the mobile input and there are 7 numbers
+    // console.log({
+    //   mobile,
+    //   isNumber: new RegExp(/^[\d]*$/gi).test(mobile),
+    //   mobileLength: mobile.length === 10,
+    //   mobileValidation,
+    // });
 
     if (name === "" || city === "" || mobile === "") {
       alert("Please provide values"); //alert user of missing values
@@ -44,14 +50,14 @@ $(document).ready(function () {
 
       // creating dynamic html string to append to table
       let dynamicTr = `
-      <tr>
-        <td>${srNo}</td>
-        <td>${name}</td>
-        <td>${city}</td>
-        <td>${formattedNumber(mobile)}</td>
-        <td><button class='btn btn-danger btn-sm'>delete </button> </td>
-      </tr>
-      `;
+         <tr>
+           <td>${srNo}</td>
+           <td>${name}</td>
+           <td>${city}</td>
+           <td>${formattedNumber(mobile)}</td>
+           <td><button class='btn btn-danger btn-sm'>delete</button> </td>
+         </tr>
+         `;
 
       $("#tblData tbody").append(dynamicTr); // appending dynamic string to table tbody
 
