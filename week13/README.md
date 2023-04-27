@@ -2,6 +2,9 @@
 
 # Intro To React
 
+    - react docs --> https://react.dev/
+    - react tutorial from docs -> https://react.dev/learn
+
 ## Webpack
 
 - Purpose: bundle JS modules into one/a few bundles to statically serve your content
@@ -9,6 +12,7 @@
   -- webpack --> npm i -D webpack@4.43.0
   -- webpack-cli --> npm i -D webpack-cli@3.3.12
   -- jquery --> npm i jquery@3.5.1
+  -- webpack docs --> https://webpack.js.org/
 
 ## Webpack React Manual Setup
 
@@ -26,6 +30,8 @@
   -- .gitignore --> specifies files we do not want pushed to our remote github repo. Things such as node_modules, api keys, etc. should not be pushed to github since we don't them to be available publicly.
   -- src directory --> contains our project files such as components and js modules
   -- components --> optional, but usually holds our react components that make up our app
+  --scripts --> allows us to run application commands in the terminal using the
+  -- create-react-app-docs --> https://create-react-app.dev/
 
   ## React Componets
 
