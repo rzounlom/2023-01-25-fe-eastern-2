@@ -18,7 +18,7 @@ Enable us to retreive properties from an object and store them as values. Rememb
 
 # State: Allows us to keep track of data within our components. We can have local state(scoped to the component), and global state(accessible to all components regardless of where they are in our application). React docs for state: https://react.dev/reference/react/useState
 
-We will be focusing on functional components(as opposed to Class based components) and react hooks for state
+We will be focusing on functional components(as opposed to Class based components) and react hooks for state, but we will walk through an example of state using each type of component.
 
 # Putting it all together with a demo app
 
