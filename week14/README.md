@@ -33,3 +33,19 @@ NOTE: the use of SASS is totally option(but I highly recommend it over regular c
 - update the file extension of you .css files to .scss
 - update the import statements using your css files to import the .scss files
 - start using sass
+
+### Setup our folder structure
+
+- clean up our App.js and App.scss
+- create data folder and data file to hold our default users
+- create components folder to hold our components
+- create folders for the components we need: user-card, user-card-list, and user-form
+- create default components for our app and get them on the screen to make sure we are rendering everything correctly
+
+### Our components and data
+
+- data --> will hold a list of defualt users for us populate our app main
+- App Component --> will hold the state for our app, as well as our handlers for updating state
+- UserForm Component --> responsible for creating a new user object. We will use this form to add users to our state
+- UserCardList --> receives a list of users(passed down as prop from our App component) and renders our list of cards/sends user data down as a props to a UserCard Component to be rendered.
+- UserCard --> receives props from our UserCardList component for a user and renders user data
