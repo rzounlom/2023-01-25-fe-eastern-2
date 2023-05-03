@@ -1,0 +1,68 @@
+.props-example {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px lightgray;
+  background-color: pink;
+}
+
+.props-example > .card {
+  background-color: white;
+  height: 50%;
+  width: 50%;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.props-example > .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.props-example > .card > .card-header {
+  background-color: white;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid lightgray;
+}
+
+.props-example > .card > .card-header > .avatar {
+  background-color: white;
+  height: 85%;
+  width: 50%;
+  border-radius: 20px;
+  border-bottom: 2px solid lightgray;
+}
+
+.props-example > .card > .card-header > .avatar > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.props-example > .card > .card-details {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.props-example > .card > .card-details > .detail {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  border: 2px solid lightgray;
+  font-size: 1.1rem;
+}
+
+.props-example > .card > .card-details > .detail > label {
+  font-weight: 600;
+}

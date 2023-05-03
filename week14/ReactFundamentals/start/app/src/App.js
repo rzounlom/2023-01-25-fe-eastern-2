@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import PropsExample from "./components/props-example/PropsExample";
+import StateExample from "./components/state-example-hooks/StateExampleHooks";
+import StateExampleClass from "./components/state-example-class/StateExampleClass";
+import { useState } from "react";
+
+let employee = {
+  firstName: "John",
+  lastName: "Doe",
+  title: "Software Engineer",
+  avatar: "https://www.w3schools.com/howto/img_avatar.png",
+  address: {
+    street: "777 Miracle Lane",
+    city: "Los Vegas",
+    state: "NV",
+    zip: "77777",
+  },
+};
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PropsExample />
+      <StateExampleClass
+        count={count}
+        increment={increment}
+        decrement={decrement}
+      />
+      <StateExample count={count} increment={increment} decrement={decrement} />
     </div>
   );
 }

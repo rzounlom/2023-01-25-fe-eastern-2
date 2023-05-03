@@ -1,0 +1,42 @@
+.counter {
+  background-color: white;
+  height: 50%;
+  width: 50%;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.counter > .counter-count {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+}
+
+.counter > .counter-actions {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.counter > .counter-actions > .counter-btn {
+  width: 45%;
+  height: 50%;
+  border-radius: 12px;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid aqua;
+}
+
+.counter > .counter-actions > .counter-btn:hover {
+  cursor: pointer;
+  background-color: aqua;
+}

@@ -1,0 +1,53 @@
+.state-example {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px lightgray;
+  background-color: pink;
+}
+
+.state-example > .counter {
+  background-color: white;
+  height: 50%;
+  width: 50%;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.state-example > .counter > .counter-count {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+}
+
+.state-example > .counter > .counter-actions {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.state-example > .counter > .counter-actions > .counter-btn {
+  width: 45%;
+  height: 50%;
+  border-radius: 12px;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid aqua;
+}
+
+.state-example > .counter > .counter-actions > .counter-btn:hover {
+  cursor: pointer;
+  background-color: aqua;
+}

@@ -1,15 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-section {
+.state-example-class {
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 1px lightgray;
+  background-color: pink;
 }
