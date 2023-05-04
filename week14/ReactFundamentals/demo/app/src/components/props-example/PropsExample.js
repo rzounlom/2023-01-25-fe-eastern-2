@@ -1,7 +1,9 @@
 import "./PropsExample.css";
 
-const PropsExample = (props) => {
-  console.log("PropsExample props: ", props);
+const PropsExample = ({ employee }) => {
+  const { firstName, lastName, title, avatar, address } = employee;
+
+  console.log("PropsExample props: ", employee);
 
   return (
     <section>
@@ -10,28 +12,25 @@ const PropsExample = (props) => {
         <div className="card">
           <div className="card-header">
             <div className="avatar">
-              <img
-                src="https://www.w3schools.com/howto/img_avatar.png"
-                alt="employee avatar"
-              />
+              <img src={avatar} alt="employee avatar" />
             </div>
           </div>
           <div className="card-details">
             <div className="detail">
               <label>First Name: </label>
-              Employee First Name
+              <p>{firstName}</p>
             </div>
             <div className="detail">
               <label>Last Name: </label>
-              <p>Employee Last Name</p>
+              <p>{lastName}</p>
             </div>
             <div className="detail">
               <label>Title: </label>
-              <p>Employee Title</p>
+              <p>{title}</p>
             </div>
             <div className="detail">
               <label>Address: </label>
-              <p>Employee Address</p>
+              <p>{`${address.street} ${address.city}, ${address.state} ${address.zip}`}</p>
             </div>
           </div>
         </div>

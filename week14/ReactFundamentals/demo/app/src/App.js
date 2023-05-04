@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <PropsExample />
+      <PropsExample employee={employee} />
       <StateExampleClass
         count={count}
         increment={increment}

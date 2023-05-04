@@ -30,8 +30,8 @@ NOTE: the use of SASS is totally option(but I highly recommend it over regular c
 ### Setup sass in react app
 
 - install command: npm - sass
-- update the file extension of you .css files to .scss
-- update the import statements using your css files to import the .scss files
+- update the file extension of you .css files to .scss (App.css and index.css)
+- update the import statements using your css files to import the .scss files (App.js and index.js)
 - start using sass
 
 ### Setup our folder structure

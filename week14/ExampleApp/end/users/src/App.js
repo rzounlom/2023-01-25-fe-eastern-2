@@ -6,6 +6,7 @@ import { useState } from "react";
 import { users } from "./data/users";
 
 function App() {
+  //create state for users list and form data
   const [userList, setUserList] = useState(users);
   const [formData, setFormData] = useState({
     firstName: "",
@@ -15,11 +16,13 @@ function App() {
     avatar: "",
   });
 
+  //function that updates our form data
   const handleFormData = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  //function submit our user form and add a new user to the list
   const handleSubmit = (event) => {
     event.preventDefault();
     for (let key in formData) {
