@@ -15,8 +15,13 @@
 - Async/Await: A different syntax than the Promise object, but achieves the same objective.
 - useEffect Hook: Replaces all other old lifcycle methods. We can use this hook to choose what happens when the state of our component changes, when an API call is complete, or any other event.
 - try/catch block: a safe way to make requests which avoids crashing our application in case of an error. We can decide what happens when our requests fail or succeed
-- Public API you can use for testgin/playing around with REST: https://jsonplaceholder.typicode.com/
 
 # Demos
 
+## Fetch basics
+
+we will use data from the https://64407795792fe886a88f6162.mockapi.io/api/todos website to show examples of making api requests. We will walk through each type of request in isolation using components.
+
 ## Todo app
+
+we will use data from the https://64407795792fe886a88f6162.mockapi.io/api/todos website to create a CRUD Todo list. You can create your own apis for your prjects by signing up at: https://mockapi.io/.
