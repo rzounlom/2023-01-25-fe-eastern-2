@@ -12,22 +12,28 @@ const TodoApp = () => {
     fetchTodos();
   }, []);
 
+  //get all todos
   const fetchTodos = async () => {
     const response = await fetch(API_URL);
     const data = await response.json();
-    setTodos(data);
+    setTodos(data); //set state to retrieved todos
   };
 
+  //track user input for todo in state
   const handleInputChange = (event) => {
     setNewTodo(event.target.value);
   };
 
+  //add Todo
   const handleAddTodo = async () => {
     if (newTodo.trim() !== "") {
+      //make sure the input is not blank
       const newTodoData = {
+        //crate a todo object with the title of the todo and the completed status defaulted to false
         title: newTodo,
         completed: false,
       };
+
       const response = await fetch(API_URL, {
         method: "POST",
         headers: {
@@ -35,23 +41,32 @@ const TodoApp = () => {
         },
         body: JSON.stringify(newTodoData),
       });
+
       const data = await response.json();
+      //update the state of our todos
       setTodos([...todos, data]);
+      //set our input to blank
       setNewTodo("");
     }
   };
 
+  //set todo status to complete
   const handleToggleCompletion = async (id) => {
     const updatedTodos = todos.map((todo) => {
+      //find the todo in sate and return its contents with the status updated
       if (todo.id === id) {
         return {
           ...todo,
-          completed: !todo.completed,
+          completed: !todo.completed, //create object
         };
       }
       return todo;
     });
+
+    //update state
     setTodos(updatedTodos);
+
+    //make update request to change status to complete based on the todo id
     await fetch(`${API_URL}/${id}`, {
       method: "PUT",
       headers: {
@@ -61,11 +76,13 @@ const TodoApp = () => {
     });
   };
 
+  //delete todo using id
   const handleDeleteTodo = async (id) => {
     await fetch(`${API_URL}/${id}`, {
       method: "DELETE",
     });
-    setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
+    //another way to set state; allows us to get access to current state without being behind the UI
+    setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id)); //set state to todos minus the one deleted
   };
 
   return (
@@ -84,21 +101,27 @@ const TodoApp = () => {
         </button>
       </form>
       <ul className="list">
-        {todos.map((todo) => (
-          <li
-            key={todo.id}
-            className={todo.completed ? "list__item--completed" : "list__item"}
-            onClick={() => handleToggleCompletion(todo.id)}
-          >
-            {todo.title}
-            <button
-              className="list__delete-button"
-              onClick={() => handleDeleteTodo(todo.id)}
+        {todos.map(
+          (
+            todo //map over todos to render each one
+          ) => (
+            <li
+              key={todo.id} //making sure to provide unique key prop
+              className={
+                todo.completed ? "list__item--completed" : "list__item"
+              } //used to toggle the row style
+              onClick={() => handleToggleCompletion(todo.id)}
             >
-              Delete
-            </button>
-          </li>
-        ))}
+              {todo.title}
+              <button
+                className="list__delete-button"
+                onClick={() => handleDeleteTodo(todo.id)}
+              >
+                Delete
+              </button>
+            </li>
+          )
+        )}
       </ul>
     </div>
   );
