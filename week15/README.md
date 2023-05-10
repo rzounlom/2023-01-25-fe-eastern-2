@@ -20,5 +20,3 @@
 # Demos
 
 ## Todo app
-
-## Blog app
