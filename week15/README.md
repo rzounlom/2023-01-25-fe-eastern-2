@@ -19,6 +19,8 @@
 
 ## Fetch basics
 
+Quick look at https://mockapi.io/
+
 we will use data from the https://64407795792fe886a88f6162.mockapi.io/api/todos website to show examples of making api requests. We will walk through each type of request in isolation using components.
 
 ## Todo app

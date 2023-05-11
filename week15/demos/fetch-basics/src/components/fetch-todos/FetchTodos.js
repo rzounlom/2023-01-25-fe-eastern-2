@@ -93,13 +93,6 @@ const FetchTodos = () => {
   useEffect(() => {
     // getTodosPromise();
     getTodosAscyncAwait();
-    //  getTodo(2);
-    // updateTodo("5", { completed: true });
-    // addTodo({
-    //   title: "Wash Car",
-    //   completed: false,
-    // });
-    // deleteTodo("24");
   }, []);
 
   return (
@@ -107,20 +100,22 @@ const FetchTodos = () => {
       <button
         onClick={() =>
           addTodo({
-            title: "Wash Car",
+            title: "Wash Dishes",
             completed: false,
           })
         }
       >
         Add Todo
       </button>
-      <button onClick={() => getTodo(2)}>Add Todo</button>
-      <button onClick={() => updateTodo("5", { completed: true })}>
+      <button onClick={() => getTodo(2)}>Get Todo</button>
+      <button
+        onClick={() =>
+          updateTodo("5", { completed: false, title: "My updated Todo" })
+        }
+      >
         Update Todo
       </button>
-      <button onClick={() => deleteTodo("5", { completed: true })}>
-        Update Todo
-      </button>
+      <button onClick={() => deleteTodo("27")}>Delete Todo</button>
       <TodCardList todos={todos} />
     </div>
   );
