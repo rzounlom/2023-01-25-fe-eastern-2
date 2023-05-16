@@ -26,11 +26,19 @@ We will be using react 17 and react router 5v per the curriculum.
 ## React Router Basics
 
 - Install React Router v5: npm i react-router-dom@5.3.0
-- Basic setup/boilerplate
+- Basic setup/boilerplate (refacter demo app to use react-router)
+  -- index.js --> add BrowserRouter component from react-router-dom and place around the App component as a parent. The App component is still the entry point for our react app
+  -- App.jsx --> import Switch and Route components/use them to route to other components
+- Refactor the App.jsx to use the Switch and Route components around all components except for the Navbar and Footer components. We want the Navbar and Footer present on all pages. In order to acheive this, we need to place the Navbar before the Switch component, and the Footer after the Switch component.
 - Three ways to render components
-  -- <Route path="/category"><Category /></Route>
-  -- <Route path="/category" component={Category}/>
-  -- <Route path="/category" render={() => <Category />}/>
+  -- <Route exact path="/"><Home /></Route>
+  -- <Route exact path="/" component={Home}/>
+  -- <Route exact path="/" render={() => <Home />}/>
+  NOTE: We need to use the "exact" prop because the Route coponent will find the firs match. So only the first route that matches the "/" will be matched.
+- Refactor the Navbar component
+  -- We need to use the Link component from react-router-dom in order to route to the specific pages(Link components are similar to the anchor elements in html)
+  -- We need to wrap the place the link tag around the text inside of our li elements and use the "to" prop to route to the pages we setup in the App.jsx file
+- Refactor the index.css and Navbar.css files
 
 ## Protecting private routes usig the useRouter hook
 

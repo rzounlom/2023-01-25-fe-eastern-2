@@ -1,6 +1,8 @@
 import "./index.css";
 
 import App from "./App";
+//react router browser router import
+import { BrowserRouter } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
@@ -8,7 +10,9 @@ import reportWebVitals from "./reportWebVitals";
 const root = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   root
 );

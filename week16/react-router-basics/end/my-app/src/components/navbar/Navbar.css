@@ -8,15 +8,9 @@ nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 5%;
-
+  padding: 0 15%;
   color: rgb(89, 89, 89);
 }
 nav ul li {
   list-style: none;
-  font-size: 1.5rem;
-}
-nav ul li:hover {
-  cursor: pointer;
-  color: black;
 }
