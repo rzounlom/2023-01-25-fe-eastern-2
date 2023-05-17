@@ -40,8 +40,6 @@ We will be using react 17 and react router 5v per the curriculum.
   -- We need to wrap the place the link tag around the text inside of our li elements and use the "to" prop to route to the pages we setup in the App.jsx file
 - Refactor the index.css and Navbar.css files
 
-## Protecting private routes usig the useRouter hook
-
 ## Routing within pages/path params using the useRouter hook
 
 - Resources
@@ -49,10 +47,15 @@ We will be using react 17 and react router 5v per the curriculum.
   -- React Router 5 w3 Schools reference: https://www.w3schools.com/react/react_router.asp
   -- Detailed guide to react router v5: https://www.sitepoint.com/react-router-complete-guide/
 
-# App Demo
-
 ## React Component libraries --> pre-coded and styled components that help speed up the development process.
 
 - similar to css libraries like bootstrap or semantic ui (there are react components libraries for both)
 - we install them like any other third party library (make sure to refer to the docs for install and component usage)
 - We will be using react-bootstrap for the demo app
+- Resource
+  -- React Bootstrap Component Library --> https://react-bootstrap.github.io/
+  -- Semantic UI React Component Library --> https://react.semantic-ui.com/
+  -- Material UI Component Library --> https://mui.com/
+  -- AntD Component Library --> https://ant.design/docs/react/introduce
+
+# App Demo --> a basic blog app using the react-bootstrap component library for styling

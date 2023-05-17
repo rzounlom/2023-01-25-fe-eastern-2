@@ -1,7 +1,7 @@
 import "./App.css";
 
 //react router imports
-import { Route, Switch } from "react-router-dom/cjs/react-router-dom.min";
+import { Route, Switch } from "react-router-dom";
 
 //component imports
 import About from "./components/about/About";
@@ -14,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
