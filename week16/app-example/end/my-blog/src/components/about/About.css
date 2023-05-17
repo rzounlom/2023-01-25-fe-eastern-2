@@ -4,6 +4,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
-  color: white;
+  color: rgb(89, 89, 89);
 }
