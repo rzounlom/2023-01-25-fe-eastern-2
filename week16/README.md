@@ -32,8 +32,8 @@ We will be using react 17 and react router 5v per the curriculum.
 - Refactor the App.jsx to use the Switch and Route components around all components except for the Navbar and Footer components. We want the Navbar and Footer present on all pages. In order to acheive this, we need to place the Navbar before the Switch component, and the Footer after the Switch component.
 - Three ways to render components
   -- <Route exact path="/"><Home /></Route>
-  -- <Route exact path="/" component={Home}/>
-  -- <Route exact path="/" render={() => <Home />}/>
+  -- <Route  path="/about" component={Home}/>
+  -- <Route path="/home" render={() => <Home />}/>
   NOTE: We need to use the "exact" prop because the Route coponent will find the firs match. So only the first route that matches the "/" will be matched.
 - Refactor the Navbar component
   -- We need to use the Link component from react-router-dom in order to route to the specific pages(Link components are similar to the anchor elements in html)

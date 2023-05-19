@@ -1,5 +1,7 @@
 import "./App.css";
 
+import { Route, Switch } from "react-router-dom";
+
 import About from "./components/about/About";
 import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
@@ -10,9 +12,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
-      <About />
-      <Projects />
+
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
+      </Switch>
       <Footer />
     </div>
   );
