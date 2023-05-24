@@ -1,14 +1,7 @@
+import DisplayCounter from "./components/DisplayCounter";
 import React from "react";
-import withCounter from "./components/withCounter";
 
-const App = ({ count, increment, decrement }) => {
-  return (
-    <div>
-      <h2>Counter: {count}</h2>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
-    </div>
-  );
+const App = () => {
+  return <DisplayCounter />;
 };
-
-export default withCounter(App);
+export default App;
