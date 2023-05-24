@@ -1,4 +1,4 @@
-<!-- Week 17 HOF/HOC, PropTypes, Redux -->
+<!-- Week 17 HOF/HOC , Redux -->
 
 # Higher Order Function
 
