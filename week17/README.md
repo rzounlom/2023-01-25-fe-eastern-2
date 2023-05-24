@@ -38,6 +38,8 @@
     -- react-redux: https://react-redux.js.org/introduction/getting-started
     -- Redux dev-tools extension: Enables us to watch, replay, and inspect how our rudux flow is working. You can add this Chrome extension by going to this link: https://chrome.google.com/
 
+  ## Blog App Demo
+
 # Deployment
 
 - Enables us to
