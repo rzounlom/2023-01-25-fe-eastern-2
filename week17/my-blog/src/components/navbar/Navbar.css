@@ -1,0 +1,49 @@
+a {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(89, 89, 89);
+}
+
+a:hover {
+  cursor: pointer;
+  color: rgb(52, 52, 52);
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+nav .nav-logo a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: aqua;
+}
+
+nav ul {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5%;
+  color: rgb(89, 89, 89);
+}
+nav ul li {
+  list-style: none;
+  /* font-size: 1.5rem; */
+}
+/* nav ul li:hover {
+  cursor: pointer;
+  color: black;
+} */
+
+@media (max-width: 768px) {
+  nav ul {
+    width: 70%;
+  }
+}

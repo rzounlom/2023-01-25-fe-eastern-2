@@ -1,0 +1,31 @@
+.home {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: darkgray;
+  overflow-y: auto;
+}
+
+.home .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 80%;
+  color: aqua;
+  border-bottom: 1px solid lightgray;
+}
+
+.home .featured-posts {
+  height: 90%;
+  width: 80%;
+}
+
+/* display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap; */

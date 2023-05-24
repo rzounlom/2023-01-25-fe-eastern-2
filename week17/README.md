@@ -31,9 +31,12 @@
 
   Walk through of using redux to create ficticious hr app
 
-  - Resources
+  - Resources/dependicies used
     -- react toastify(React library for displaying messages to users): https://www.npmjs.com/package/react-toastify
     -- AntD React component library: https://ant.design/
+    -- Redux Toolkit docs: https://redux-toolkit.js.org/introduction/getting-started
+    -- react-redux: https://react-redux.js.org/introduction/getting-started
+    -- Redux dev-tools extension: Enables us to watch, replay, and inspect how our rudux flow is working. You can add this Chrome extension by going to this link: https://chrome.google.com/
 
 # Deployment
 

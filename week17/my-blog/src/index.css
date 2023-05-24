@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(89, 89, 89);
+}
+
+a:hover {
+  cursor: pointer;
+  color: rgb(74, 74, 74);
+}
